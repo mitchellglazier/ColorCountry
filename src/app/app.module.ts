@@ -15,6 +15,12 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { HomeModule } from './home/home.module';
 import { CarouselComponent } from './carousel/carousel.component';
 
+import { AngularFireModule } from '@angular/fire';
+import { environment } from '../environments/environment';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ContactFormComponent } from './contact-form/contact-form.component';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,6 +29,7 @@ import { CarouselComponent } from './carousel/carousel.component';
     NavbarComponent,
     FooterComponent,
     CarouselComponent,
+    ContactFormComponent,
   ],
   imports: [
   BrowserModule,
@@ -31,6 +38,9 @@ import { CarouselComponent } from './carousel/carousel.component';
     RouterModule,
     AppRoutingModule,
     HomeModule,
+    ReactiveFormsModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
