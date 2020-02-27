@@ -5,10 +5,12 @@ import { Routes, RouterModule } from "@angular/router";
 
 import { ProfileComponent } from "./profile/profile.component";
 import { LandingComponent } from "./landing/landing.component";
+import { AdminComponent } from "./admin/admin.component";
 
 const routes: Routes = [
   { path: "tournaments", component: ProfileComponent },
   { path: "landing", component: LandingComponent },
+  { path: "admin", component: AdminComponent },
   { path: "", redirectTo: "landing", pathMatch: "full" }
 ];
 

@@ -18,6 +18,7 @@ import { environment } from "../environments/environment";
 import { ReactiveFormsModule } from "@angular/forms";
 import { ContactFormComponent } from "./contact-form/contact-form.component";
 import { AngularFireDatabaseModule } from "angularfire2/database";
+import { AdminComponent } from './admin/admin.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { AngularFireDatabaseModule } from "angularfire2/database";
     NavbarComponent,
     FooterComponent,
     CarouselComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
